@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+/* COMMMON */
+*{box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+img{display: block;}
+.inner{width: 1280px; margin: 0 auto;}
+.cleafix::after{content: ""; display: block; clear: both;}
+.hidden{width: 0;font-size: 0;line-height: 0;text-indent: -9999px;position: absolute;left: -9999px;}
+
+/* HEADER - S */
+.header{
+  width: 100%; height: 100px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute; left: 0; top: 0; z-index: 100;
+}
+.logo{
+  float: left;
+  width: 254px; height: 32px;
+  margin-top: 35px;
+}
+.logo a{
+  display: block;
+  width: 100%; height: 32px;
+  background: url(../img/logo.png) no-repeat 0 0 / contain;
+}
+.nav-wrap{float: right;}
+.tnb{text-align: right;color: #fff;}
+.tnb a{line-height: 30px;}
+
+/* gnb */
+.gnb{}
+.gnb > ul{}
+.gnb .depth1{
+  float: left;
+  position: relative; z-index: 100;
+}
+.gnb .depth1 > a{
+  display: block;
+  height: 70px;
+  padding: 0 50px;
+  line-height: 70px; color: #fff;
+}
+.gnb .depth2{
+  display: none;
+}
+.gnb .depth2 li{}
+.gnb .depth2 li a{
+  display: block;
+  width: 100%; height: 40px;
+  line-height: 40px; color: #333; text-align: center;
+}
+.gnb::after{content: "";
+  display: none;
+  width: 100%; height: 200px;
+  background-color: #fff;
+  position: absolute; left: 0; top: 100px;
+}
+.gnb:hover .depth2{display: block;}
+.gnb:hover::after{display: block;}
+/* gnb.on */
+.nav-wrap.on{
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed; left: 0; top: 0; z-index: 100;
+}
+.nav-wrap.on .nav-wrap-box{
+  width: 50%; height: 100%;
+  background-color: #fff;
+  position: fixed; right: 0; top: 0;
+}
+.nav-wrap.on .tnb{}
+.nav-wrap.on .gnb{}
+
+.all-menu{display: none;}
+
+/* HEADER - E */
+/* MAIN - S */
+/* VISUAL */
+.visual{width: 100%; height: 550px;
+  overflow: hidden;
+}
+.visual .slick-prev{width: 100%; z-index: 10;}
+.slide{
+  width: 100%; height: 550px;
+  padding-top: 100px;
+  font-weight: 700; font-size: 120px; line-height: 450px; color: #fff; text-align: center;
+  background-repeat: no-repeat; background-position: center center; background-size: cover;
+}
+.slide1{background-image: url(../img/mainslide01.jpg);}
+.slide2{background-image: url(../img/mainslide02.jpg);}
+.slide3{background-image: url(../img/mainslide03.jpg);}
+
+.slick-dotted.slick-slider {margin-bottom: 0;}
+.slick-dots {bottom: 10px;}
+.slick-dots li.slick-active button:before{color: #fff;}
+.container{
+  background-image: linear-gradient(#f4f0e9,#f4f0e9);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  background-position: 0 850px;
+}
+.container-wrap{padding-top: 50px;}
+.container-wrap section{padding: 50px 0;}
+
+/* top3 */
+.top3{width: 100%;}
+.top3 .tit{
+  height: 50px;
+  margin-bottom: 30px;
+  font-weight: 700; font-size: 30px; line-height: 50px; text-align: center;
+}
+.top3-wrap{width: 100%;}
+.top3-article{
+  float: left;
+  width: calc( ( 100% - 40px ) / 3 );
+}
+.top3-article + .top3-article{margin-left: 20px;}
+.top3-article figure{width: 100%;}
+.top3-article figure img{width: 100%;}
+.top3-article-txt{
+  padding: 20px 30px;
+  text-align: center;
+}
+.top3-article-txt em{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700; font-size: 20px; line-height: 30px;
+}
+.top3-article-txt p{
+  margin-bottom: 30px;
+  font-size: 16px; line-height: 20px;
+}
+.top3-article-txt .more{font-size: 14px; line-height: 20px;}
+
+/* bbs */
+.bbs{}
+.bbs article{
+  float: left;
+  height: 200px;
+}
+.sns{
+  width: 60%;
+  margin-right: 5%; padding: 50px;
+  background: url(../img/bg_app.jpg) no-repeat center center / cover;
+}
+.sns a{
+  float: left;
+  width: 48%; height: 100px;
+  padding: 27px;
+  font-size: 20px; line-height: 42px; color: #fff;
+  border: 2px solid #fff;
+}
+.sns a:nth-of-type(1){margin-right: 4%;}
+.sns a::before{content: "";
+  float: left;
+  width: 42px; height: 42px;
+  margin-right: 20px;
+  background-size: contain;
+}
+.sns a:nth-of-type(1)::before{background-image: url(../img/ico_kakao.png);}
+.sns a:nth-of-type(2)::before{background-image: url(../img/ico_phone.png);}
+.notice{
+  width: 35%;
+  position: relative;
+}
+.notice h4{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.notice-list{}
+.notice-list li{
+  height: 30px;
+}
+.notice-list li a{
+  display: block;
+  width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.notice .more{
+  position: absolute; right: 0; top: 0;
+}
+/* aisde */
+.quick{}
+.quick ul{}
+.quick ul li{}
+.quick ul li a{}
+.quick-top{}
+/* MAIN - E */
+/* FOOTER - S */
+.footer{
+  height: 200px;
+  border-top: 1px solid #aaa;
+  background-color: #ddd;
+}
+/* FOOTER - E */
+
+/* ********** MAX-WIDTH : 1280 ********** */
+@media (max-width : 1280px) {
+  .inner{width: 100%;}
+}
+

@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+* , ::after , ::before{
+  box-sizing: border-box;
+}
+/* flex를 사용할 때 비포 에프터의 정렬에 문제가 생김 */
+
+.hidden{
+  width: 0; height: 0; overflow: hidden;
+  font-size: 0; line-height: 0; text-indent: -9999px;
+  position: absolute; left: -9999px;
+}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+a{text-decoration: none; color: inherit;}
+
+body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: -0.5px;}
+
+
+.header{
+  width: 800px; height: 100%;
+  background-color: #af0;
+  position: fixed; left: -500px; top: 0; z-index: 100;
+  transform: skew(-40deg);
+}
+.logo{
+  width: 321px; height: 133px;
+  text-indent: -9999px;
+  position: absolute; right: 280px; top: 35px;
+  transform: skew(40deg);
+}
+.logo a{
+  display: block;
+  width: 100%; height: 133px;
+  background-image: url(../img/logo2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0.88);
+}
+.gnb{
+  position: absolute; right: 0; top: 200px;
+}
+.gnb > ul{}
+.gnb .depth1{
+  width: 200px;
+  position: relative;
+}
+.gnb .depth1 > a{
+  display: block;
+  width: 100%; height: 60px;
+  padding-right: 40px;
+  color: #000;
+}
+.gnb .depth1 > a span{
+  display: block;
+  width: 100%; height: 50px;
+  line-height: 60px; text-align: right;
+  transform: skew(40deg);
+}
+.gnb .depth2{
+  position: absolute; left: 0; top: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.gnb .depth2 li{
+  width: 150px; height: 40px;
+  margin-bottom: 5px;
+}
+.gnb .depth2 li a{
+  display: block;
+  width: 100%; height: 40px;
+  color: #fff;
+  border-bottom: 2px solid #af0;
+  background-color: #333;
+}
+.gnb .depth2 li a span{
+  display: block;
+  width: 100%; height: 40px;
+  line-height: 40px; text-align: center;
+  transform: skew(40deg);
+}
+/* hover */
+.gnb .depth1:hover > a{
+  color: #fff;
+  background-color: #000;
+}
+.gnb .depth1:hover .depth2{
+  z-index: 110;
+  opacity: 0.8;
+  transform: translate(180px,0);
+}
+/* hover */
+/* on */
+.gnb .on > a{
+  color: #fff;
+  background-color: #000;
+}
+/* on */
+
+.container{}
+.mov{
+  width: 100%; min-width: 1600px;
+  position: fixed; left: 0; top: 0;
+}
+.mov video{
+  width: 100%;
+}
+.text{
+  position: fixed; right: 0; top: 0; z-index: 100;
+}
+.text-tit{}
+.text-dexc{}
+
+.down{
+  width: 50px; height: 50px;
+  margin-left: -25px;
+  position: fixed; left: 50%; bottom: 100px; z-index: 100;
+  animation: ani 1s infinite;
+}
+.down a{}
+.down a i{
+  font-size: 80px; color: #fff;
+  text-shadow: 0 5px 10px #fff;
+}
+@keyframes ani{
+  50%{transform: translate(0,10px);}
+}
+
+.footer{
+  width: 800px; height: 100%;
+  position: fixed; right: -800px; bottom: 0; z-index: 100;
+  background-color: rgba(0,0,0,0.3);
+  transform: skew(-40deg);
+  transition: all 0.5s;
+}
+.f-wrap{
+  width: 650px; height: 100%;
+  position: absolute; left: 150px; bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  transition: all 1s;
+}
+.f-img{
+  width: 300px;
+  position: absolute; left: 50px; bottom: 50px; 
+}
+.f-img li{
+  transform: translate(150px,0);
+  transition: all 0.5s;
+}
+.f-img li:nth-child(2){transition-delay: 0.1s;}
+.f-img li:nth-child(3){transition-delay: 0.2s;}
+.f-img li em{
+  display: block;
+  color: #af0;
+  transform: skew(40deg);
+}
+.f-img li a{}
+.f-img li a img{}
+/* hover */
+.footer:hover{right: -500px;}
+.footer:hover .f-wrap{left: 50px;}
+.footer:hover .f-img li{transform: translate(0,0);}
+/* hover */
