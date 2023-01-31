@@ -10,14 +10,16 @@
 }
 .skip-nav a:focus{top: 0;}
 .hidden{width: 0;height: 0;overflow: hidden; font-style: 0;line-height: 0;text-indent: -9999px;}
+html{font-size: 10px; line-height: 1;}
+body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-serif; color: #555; letter-spacing: -1px;}
 .inner{padding-left: 30px;padding-right: 30px;}
 .sec{padding-top: 200px;padding-bottom: 200px;}
-html{font-size: 10px; line-height: 1;}
-body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-serif; color: #555;}
+.sec-tit{margin-bottom: 100px; padding-right: 100px; font-weight: 500; font-size: 5rem; color: #aaa; text-align: center;}
+.sec-tit strong{font-weight: 700; font-size: 7rem;}
+.sec-tit em{color: #333;}
 /* COMMON - E */
 
 /* HEADER - S */
-.header{}
 .header .inner{display: flex; justify-content: space-between; align-items: center;}
 .logo{width: 220px; height: 40px;}
 .logo a{
@@ -26,7 +28,6 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
   background: url(../img/logo.png);
   text-indent: -9999px;
 }
-.gnb{}
 .gnb-wrap{display: flex;}
 .gnb-list{position: relative;}
 .gnb-list a{
@@ -48,5 +49,20 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
 .gnb-list:nth-child(4):after{background-color: #daf;}
 .gnb-list:nth-child(5):after{background-color: #9ef;}
 .gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
-
 /* HEADER - E */
+.snb{position: fixed; right: 30px; top: 250px; z-index: 20;}
+.snb-wrap{}
+.snb-list{
+  padding: 20px 0;
+}
+.snb-list a{display: flex; align-items: center;}
+.snb-list a span{font-size: 18px; color: #999;}
+.snb-list a::before{content: "";
+  display: inline-block;
+  width: 20px; height: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  transform: rotate(135deg);
+  transition: all 0.5s;
+}

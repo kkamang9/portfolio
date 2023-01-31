@@ -3,3 +3,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-serif; */
 
+/* HOME - S */
+.home{position: relative;}
+.home .sec-tit{
+  padding: 100px calc(50% - 220px) 100px 0;
+  text-align: right;
+  position: relative;
+}
+.home .sec-tit strong{display: block;}
+.home .sec-tit::before , .home .sec-tit::after{content: "";
+  display: block;
+  width: 20px; height: 20px;
+  border-radius: 100%;
+  position: absolute; right: calc(50% - 250px);
+}
+.home .sec-tit::before{
+  background-color: #99f;
+  top: 125px;
+}
+.home .sec-tit::after{
+  background-color: #f99;
+  top: 190px;
+}
+
+.home .circle{position: absolute;}
+.home .circle:nth-of-type(1){left: 10%; top: 30%;}
+.home .circle:nth-of-type(2){left: 40%; top: 10%;}
+.home .circle:nth-of-type(3){left: 20%; top: 90%;}
+.home .circle:nth-of-type(4){left: 50%; top: 70%;}
+.home .circle:nth-of-type(5){left: 80%; top: 20%;}
+.home .circle p{position: relative;}
+.home .circle p::before, .home .circle p::after{content: "";
+  display: block;
+  width: 100px; height: 100px;
+  border: 3px solid; border-radius: 100%;
+  position: absolute; left: 0; top: 0;
+  opacity: 0;
+  animation: ball infinite linear;
+}
+.home .circle p::before{
+  border-color: #f99;
+  animation-duration: 3.2s;
+}
+.home .circle p::after{
+  border-color: #99f;
+  animation-duration: 2.6s;
+}
+.home .circle:nth-of-type(1) p::before, .home .circle:nth-of-type(4) p::before{animation-delay: 0.7s;}
+.home .circle:nth-of-type(1) p::after, .home .circle:nth-of-type(4) p::after{animation-delay: 0.2s;}
+.home .circle:nth-of-type(2) p::before{animation-delay: 0.4s;}
+.home .circle:nth-of-type(2) p::after{animation-delay: 0.3s;}
+.home .circle:nth-of-type(3) p::before, .home .circle:nth-of-type(5) p::after{animation-delay: 0.5s;}
+.home .circle:nth-of-type(3) p::after{animation-delay: 1s;}
+.home .circle:nth-of-type(5) p::before{animation-delay: 0.9s;}
+
+@keyframes ball {
+  0%{transform: scale(0%);}
+  50%{transform: scale(50%); opacity: 0.3;}
+  100%{transform: scale(100%);}
+}
+/* HOME - E */
+/* PROFILE - S */
+.profile{position: relative;}
+.profile::before, .profile::after{content: "";
+  display: block;
+  width: calc(20vw + 100px); height: calc(20vw + 100px);
+  border-radius: 100%;
+  position: absolute; z-index: -1;
+  opacity: 0.3;
+}
+.profile::before{background-color: #f55; left: -10vw; top: 300px;}
+.profile::after{background-color: #09f; left: 5vw; top: calc(5vw + 400px);}
+.profile-wrap{display: flex; justify-content: center;}
+.profile-wrap .id-pic{
+  width: 300px; height: 450px;
+  border: 1px solid #f00;
+}
+.profile-wrap .id-pic img{width: 100%;}
+.profile-box{display: flex; flex-wrap: wrap; width: 500px;}
+.profile-box li{margin-bottom: 50px; padding-left: 80px;}
+.profile-box li:nth-child(-n+2){width: 100%;}
+.profile-box li .sub-tit{
+  display: flex; align-items: center;
+  margin-bottom: 20px;
+  font-size: 2.4rem; color: #333;
+}
+.profile-box li .sub-tit::before{content: "";
+  display: inline-block;
+  width: 20px; height: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #f99;
+  transform: rotate(135deg);
+}
+.profile-box li .txt-wrap{padding-left: 30px;}
+.profile-box li .txt-wrap p{font-size: 18px; line-height: 24px;}
+/* PROFILE - E */
+/* PROJECT - S */
+.project{}
+.project .sec-tit{}
+.project article{}
+.project article .project-header{}
+.project article .project-header h4{}
+.project article .project-header strong{}
+.project article .project-header em{}
+.project article .picture{
+  width: 520px; height: 432px;
+  background: url(../img/project-monitor.png);
+  padding: 18px 0 0 15px;
+  position: relative;
+}
+.project article .picture::after{content: " 마우스를 올려보세요";
+  display: block;
+  width: 70px; height: 30px;
+  padding: 30px 10px;
+  font-size: 16px; color: #fff; text-align: center;
+  border-radius: 100%;
+  background-color: rgba(255,153,153,0.7);
+  position: absolute; left: -20px; top: -20px;
+  transition: all 0.3s; opacity: 1;
+}
+.project article .picture figure{width: 490px; height: 280px; overflow: hidden;}
+.project article .picture figure img{width: 100%; position: relative;transition: all 1s linear;}
+.project article .concept{}
+.project article .concept p{}
+.project article .concept p span{}
+.project1{}
+.project1 .project-header{}
+.project1 .project-header h4{}
+.project1 .project-header strong{}
+.project1 .project-header em{}
+.project1 .picture{}
+.project1 .picture figure{}
+.project1 .picture figure img{}
+.project1 .concept{}
+.project1 .concept p{}
+.project1 .concept p span{}
+.project2{}
+.project2 .project-header{}
+.project2 .project-header h4{}
+.project2 .project-header strong{}
+.project2 .project-header em{}
+.project2 .picture{}
+.project2 .picture figure{}
+.project2 .picture figure img{}
+.project2 .concept{}
+.project2 .concept p{}
+.project2 .concept p span{}
+.project3{}
+.project3 .project-header{}
+.project3 .project-header h4{}
+.project3 .project-header strong{}
+.project3 .project-header em{}
+.project3 .picture{}
+.project3 .picture figure{}
+.project3 .picture figure img{}
+.project3 .concept{}
+.project3 .concept p{}
+.project3 .concept p span{}
+.project4{}
+.project4 .project-header{}
+.project4 .project-header h4{}
+.project4 .project-header strong{}
+.project4 .project-header em{}
+.project4 .picture{}
+.project4 .picture figure{}
+.project4 .picture figure img{}
+.project4 .concept{}
+.project4 .concept p{}
+.project4 .concept p span{}
+/* PROJECT - E */
