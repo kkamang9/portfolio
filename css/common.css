@@ -49,14 +49,12 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
 .gnb-list:nth-child(4):after{background-color: #daf;}
 .gnb-list:nth-child(5):after{background-color: #9ef;}
 .gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
-/* HEADER - E */
 .snb{position: fixed; right: 30px; top: 250px; z-index: 20;}
-.snb-wrap{}
 .snb-list{
   padding: 20px 0;
 }
 .snb-list a{display: flex; align-items: center;}
-.snb-list a span{font-size: 18px; color: #999;}
+.snb-list a span{font-size: 18px; color: #555;}
 .snb-list a::before{content: "";
   display: inline-block;
   width: 20px; height: 10px;
@@ -66,3 +64,4 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
   transform: rotate(135deg);
   transition: all 0.5s;
 }
+/* HEADER - E */

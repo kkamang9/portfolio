@@ -102,16 +102,41 @@
 /* PROJECT - S */
 .project{}
 .project .sec-tit{}
-.project article{}
-.project article .project-header{}
-.project article .project-header h4{}
-.project article .project-header strong{}
-.project article .project-header em{}
+.project article{
+  margin-top: 200px;
+  position: relative;
+}
+.project article:nth-of-type(-n+3)::before{content: "";
+  display: block;
+  width: 550px; height: 550px;
+  border-radius: 100%;
+  position: absolute; top: -120px;
+}
+.project article:nth-of-type(-n+3)::after{content: "";
+  display: block;
+  width: 250px; height: 250px;
+  border-radius: 100%;
+  position: absolute; top: 250px;
+}
+.project article .project-header{
+  display: flex; flex-direction: column;
+  color: #fff;
+  position: absolute;
+}
+.project article .project-header h4{order: 2; font-weight: 700; font-size: 3.6rem;}
+.project article .project-header strong{order: 1; font-size: 2rem;}
+.project article .project-header em{
+  width: 200px;
+  margin-bottom: 10px; padding-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+}
 .project article .picture{
   width: 520px; height: 432px;
+  margin: 0 auto;
   background: url(../img/project-monitor.png);
-  padding: 18px 0 0 15px;
-  position: relative;
+  margin-bottom: 50px; padding: 18px 0 0 15px;
+  position: relative; left: -50px;
 }
 .project article .picture::after{content: " 마우스를 올려보세요";
   display: block;
@@ -119,43 +144,59 @@
   padding: 30px 10px;
   font-size: 16px; color: #fff; text-align: center;
   border-radius: 100%;
-  background-color: rgba(255,153,153,0.7);
   position: absolute; left: -20px; top: -20px;
   transition: all 0.3s; opacity: 1;
 }
 .project article .picture figure{width: 490px; height: 280px; overflow: hidden;}
 .project article .picture figure img{width: 100%; position: relative;transition: all 1s linear;}
-.project article .concept{}
-.project article .concept p{}
-.project article .concept p span{}
+.project article .concept{display: flex; justify-content: center;}
+.project article .concept-prop{margin-right: 100px;}
+.project article .concept-prop p{font-size: 18px; line-height: 30px;}
+.project article .concept-prop p span{
+  display: inline-block;
+  width: 70px;
+  margin-right: 15px;
+  font-weight: 500; color: #333; text-align: right;
+}
+.project article .concept-desc{font-size: 18px; line-height: 30px;}
+.project article .concept-desc strong{display: block; font-weight: 500; color: #333;}
 .project1{}
-.project1 .project-header{}
+.project1::before{background-color: #f99; left: calc(50% + 20px);}
+.project1::after{background-color: #f55; left: calc(50% + 400px);}
+.project1 .project-header{align-items: flex-end; left: calc(50% + 250px);}
 .project1 .project-header h4{}
 .project1 .project-header strong{}
-.project1 .project-header em{}
+.project1 .project-header em{text-align: right;}
 .project1 .picture{}
+.project1 .picture::after{background-color: rgba(255,153,153,0.7);}
 .project1 .picture figure{}
 .project1 .picture figure img{}
 .project1 .concept{}
 .project1 .concept p{}
 .project1 .concept p span{}
 .project2{}
-.project2 .project-header{}
+.project2::before{background-color: #99f; right: calc(50% + 120px);}
+.project2::after{background-color: #55f; right: calc(50% + 500px);}
+.project2 .project-header{right: calc(50% + 350px);}
 .project2 .project-header h4{}
 .project2 .project-header strong{}
 .project2 .project-header em{}
 .project2 .picture{}
+.project2 .picture::after{background-color: rgba(153,153,255,0.7);}
 .project2 .picture figure{}
 .project2 .picture figure img{}
 .project2 .concept{}
 .project2 .concept p{}
 .project2 .concept p span{}
 .project3{}
-.project3 .project-header{}
+.project3::before{background-color: #fb5; left: calc(50% + 20px);}
+.project3::after{background-color: #f90; left: calc(50% + 400px);}
+.project3 .project-header{align-items: flex-end; left: calc(50% + 250px);}
 .project3 .project-header h4{}
 .project3 .project-header strong{}
-.project3 .project-header em{}
+.project3 .project-header em{text-align: right;}
 .project3 .picture{}
+.project3 .picture::after{background-color: rgba(255,153,0,0.7);}
 .project3 .picture figure{}
 .project3 .picture figure img{}
 .project3 .concept{}
