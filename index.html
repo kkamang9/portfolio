@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body>
   <aside class="skip-nav"><a href="#container">본문 바로가기</a></aside>
@@ -39,7 +42,8 @@
         </ul>
       </nav>
     </div>
-    <aside class="snb">
+    <nav class="snb">
+      <h2 class="hidden">사이드메뉴</h2>
       <ul class="snb-wrap">
         <li class="snb-list"><a href="#"><span>Home</span></a></li>
         <li class="snb-list"><a href="#"><span>Profile</span></a></li>
@@ -50,7 +54,7 @@
         <li class="snb-list"><a href="#"><span>Etc</span></a></li>
         <li class="snb-list"><a href="#"><span>Contact</span></a></li>
       </ul>
-    </aside>
+    </nav>
   </header>
   <main class="container" id="container">
     <h2 class="hidden">메인컨텐츠</h2>
@@ -126,6 +130,11 @@
           </div>
           <p class="concept-desc"><strong>컨셉설명</strong>그누보드를 사용해 구동 가능한 사이트를 만들었습니다.<br>밝고 긍정적인 느낌을 주기위해 높은 채도의 노란색을 포인트 컬러로 사용했습니다.</p>
         </div>
+        <ul class="btn-wrap">
+          <li><a href="web/project2/ppt/project2.pptx">리뉴얼 기획서</a></li>
+          <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#web01">컨셉서 보기</a></li>
+          <li><a href="http://jaehong.pe.kr/" target="_blank">페이지 열기</a></li>
+        </ul>
       </article>
       <article class="project2">
         <header class="project-header">
@@ -145,6 +154,11 @@
           </div>
           <p class="concept-desc"><strong>컨셉설명</strong>CSS 미디어를 사용한 반응형 웹 디자인 입니다.<br>회사의 성격에 맞게 신뢰감을 주는 푸른색을 주로 사용해 디자인 했습니다.</p>
         </div>
+        <ul class="btn-wrap">
+          <li><a href="web/project3/ppt/project3.pptx">리뉴얼 기획서</a></li>
+          <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#web02">컨셉서 보기</a></li>
+          <li><a href="web/project3/html/index.html" target="_blank">페이지 열기</a></li>
+        </ul>
       </article>
       <article class="project3">
         <header class="project-header">
@@ -164,6 +178,11 @@
           </div>
           <p class="concept-desc"><strong>컨셉설명</strong>적응형 웹 리뉴얼 프로젝트 입니다.<br>긍정적이고 발전하는 이미지를 주기 위해서 주황색 계열의 포인트 컬러를 사용했습니다.</p>
         </div>
+        <ul class="btn-wrap">
+          <li><a href="web/project1/ppt/project1.pptx">리뉴얼 기획서</a></li>
+          <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#web03">컨셉서 보기</a></li>
+          <li><a href="web/project1/html/index.html" target="_blank">페이지 열기</a></li>
+        </ul>
       </article>
       <article class="project4">
         <header class="project-header">
@@ -171,15 +190,62 @@
           <strong>앱 디자인</strong>
           <em>Portfolio #4</em>
         </header>
-        <div class="concept">
-          <p><span>작업명</span>트립 어드바이저</p>
-          <p><span>제작기간</span>22.12.26 - 23.01.06</p>
-          <p><span>제작물</span>앱디자인(Figma)</p>
-          <p><span>컬러</span></p>
+        <div class="picture">
+          <figure><img src="img/project-figma.png" alt=""></figure>
         </div>
-        <p class="concept-desc"><strong>컨셉설명</strong></p>
+        <div class="concept">
+          <div class="concept-prop">
+            <p><span>작업명</span>트립 어드바이저</p>
+            <p><span>제작기간</span>22.12.26 - 23.01.06</p>
+            <p><span>제작물</span>앱디자인(Figma)</p>
+            <p><span>컬러</span></p>
+          </div>
+          <p class="concept-desc"><strong>컨셉설명</strong>여행 소개 어플 트립 어드바이저의 리뉴얼 디자인입니다.<br>부드러운 인상을 주어 편한 마음으로 구매 할 수 있도록 했습니다.</p>
+        </div>
+        <ul class="btn-wrap">
+          <li><a href="#">리뉴얼 기획서</a></li>
+          <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#mob01">컨셉서 보기</a></li>
+          <li><a href="#">피그마 작업</a></li>
+        </ul>
       </article>
     </section>
+    <!-- modal -->
+    <div class="modal fade" id="web01" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 1020px">
+          <div class="modal-body">
+            <img src="img/concept/raracost-concept.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="web02" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 1020px">
+          <div class="modal-body">
+            <img src="img/concept/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="web03" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 1020px">
+          <div class="modal-body">
+            <img src="img/concept/wwf-conceptsheet.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="mob01" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 1020px">
+          <div class="modal-body">
+            <img src="img/concept/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer"></footer>
 </body>

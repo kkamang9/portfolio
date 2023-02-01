@@ -28,6 +28,7 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
   background: url(../img/logo.png);
   text-indent: -9999px;
 }
+/* gnb */
 .gnb-wrap{display: flex;}
 .gnb-list{position: relative;}
 .gnb-list a{
@@ -48,20 +49,33 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
 .gnb-list:nth-child(3):after{background-color: #faa;}
 .gnb-list:nth-child(4):after{background-color: #daf;}
 .gnb-list:nth-child(5):after{background-color: #9ef;}
-.gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
-.snb{position: fixed; right: 30px; top: 250px; z-index: 20;}
+/* snb */
+.snb{position: fixed; right: 10px; top: 250px; z-index: 20;}
+.snb-wrap{width: 120px;}
 .snb-list{
   padding: 20px 0;
 }
 .snb-list a{display: flex; align-items: center;}
-.snb-list a span{font-size: 18px; color: #555;}
+.snb-list a span{
+  font-size: 18px; color: #555;
+  opacity: 0;
+  transition: all 0.3s;
+}
 .snb-list a::before{content: "";
   display: inline-block;
-  width: 20px; height: 10px;
+  width: 15px; height: 15px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 7.5px;
   background-color: #ddd;
   transform: rotate(135deg);
   transition: all 0.5s;
+}
+/* hover */
+.gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
+.snb-list a:hover span{opacity: 1;}
+.snb-list a:hover::before{
+  width: 20px; height: 10px;
+  border-radius: 5px;
+  background-color: #99f;
 }
 /* HEADER - E */

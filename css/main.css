@@ -6,7 +6,7 @@
 /* HOME - S */
 .home{position: relative;}
 .home .sec-tit{
-  padding: 100px calc(50% - 220px) 100px 0;
+  padding: 100px calc(50% - 240px) 100px 0;
   text-align: right;
   position: relative;
 }
@@ -15,7 +15,7 @@
   display: block;
   width: 20px; height: 20px;
   border-radius: 100%;
-  position: absolute; right: calc(50% - 250px);
+  position: absolute; right: calc(50% - 270px);
 }
 .home .sec-tit::before{
   background-color: #99f;
@@ -101,11 +101,11 @@
 /* PROFILE - E */
 /* PROJECT - S */
 .project{}
-.project .sec-tit{}
+.project .sec-tit{margin-bottom: 250px;}
 .project article{
-  margin-top: 200px;
   position: relative;
 }
+.project article:nth-of-type(-n+3){margin-bottom: 400px;}
 .project article:nth-of-type(-n+3)::before{content: "";
   display: block;
   width: 550px; height: 550px;
@@ -118,11 +118,13 @@
   border-radius: 100%;
   position: absolute; top: 250px;
 }
-.project article .project-header{
-  display: flex; flex-direction: column;
+.project article .project-header{display: flex; flex-direction: column;}
+.project article:nth-of-type(-n+3) .project-header{
   color: #fff;
   position: absolute;
 }
+.project article:nth-of-type(4) .project-header{text-align: center; padding-right: 100px;}
+.project article:nth-of-type(4) .project-header em{width: 100%; border: 0;}
 .project article .project-header h4{order: 2; font-weight: 700; font-size: 3.6rem;}
 .project article .project-header strong{order: 1; font-size: 2rem;}
 .project article .project-header em{
@@ -138,18 +140,18 @@
   margin-bottom: 50px; padding: 18px 0 0 15px;
   position: relative; left: -50px;
 }
-.project article .picture::after{content: " 마우스를 올려보세요";
+.project article .picture::after{content: "마우스를 올려보세요";
   display: block;
-  width: 70px; height: 30px;
-  padding: 30px 10px;
-  font-size: 16px; color: #fff; text-align: center;
+  width: 90px; height: 90px;
+  padding: 25px 0;
+  font-size: 16px; line-height: 20px; color: #fff; text-align: center;word-break: keep-all;
   border-radius: 100%;
   position: absolute; left: -20px; top: -20px;
-  transition: all 0.3s; opacity: 1;
+  transition: all 0.5s; opacity: 1;
 }
 .project article .picture figure{width: 490px; height: 280px; overflow: hidden;}
-.project article .picture figure img{width: 100%; position: relative;transition: all 1s linear;}
-.project article .concept{display: flex; justify-content: center;}
+.project article .picture figure img{width: 100%; position: relative; top: 0; left: 0; transition: all 5s ease-in-out;}
+.project article .concept{display: flex; justify-content: center; margin-bottom: 100px;}
 .project article .concept-prop{margin-right: 100px;}
 .project article .concept-prop p{font-size: 18px; line-height: 30px;}
 .project article .concept-prop p span{
@@ -160,6 +162,20 @@
 }
 .project article .concept-desc{font-size: 18px; line-height: 30px;}
 .project article .concept-desc strong{display: block; font-weight: 500; color: #333;}
+.project article .btn-wrap{
+  display: flex; justify-content: space-between;
+  width: 800px;
+  margin-left: calc(50% - 450px);
+}
+.project article .btn-wrap li{}
+.project article .btn-wrap li a{
+  display: block;
+  width: 200px; height: 60px;
+  border: 1px solid #aaa; border-radius: 40px;
+  font-weight: 500; font-size: 2rem; line-height: 60px; text-align: center;
+  background-color: #fff;
+  transition: all 0.5s;
+}
 .project1{}
 .project1::before{background-color: #f99; left: calc(50% + 20px);}
 .project1::after{background-color: #f55; left: calc(50% + 400px);}
@@ -207,10 +223,28 @@
 .project4 .project-header h4{}
 .project4 .project-header strong{}
 .project4 .project-header em{}
-.project4 .picture{}
-.project4 .picture figure{}
-.project4 .picture figure img{}
+.project .project4 .picture{
+  width: 200px; height: 406px;
+  background-image: url(../img/project-mobile.png);
+}
+.project .project4 .picture::after{background-color: rgba(50,230,170,0.7);}
+.project .project4 .picture figure{
+  width: 183px; height: 324px;
+  position: absolute; left: 9px; top: 41px;
+}
+.project .project4 .picture figure img{width: fit-content;}
 .project4 .concept{}
 .project4 .concept p{}
 .project4 .concept p span{}
+/* hover */
+.project article:nth-of-type(1) .picture:hover figure img{top: -1033px;}
+.project article:nth-of-type(2) .picture:hover figure img{top: -1260px;}
+.project article:nth-of-type(3) .picture:hover figure img{top: -1004px;}
+.project article:nth-of-type(4) .picture:hover figure img{left: -1098px;}
+.project article .picture:hover::after{opacity: 0;}
+.project article .btn-wrap li a:hover{border: 0; color: #fff;}
+.project article:nth-of-type(1) .btn-wrap li a:hover{background-color: #f99;}
+.project article:nth-of-type(2) .btn-wrap li a:hover{background-color: #99f;}
+.project article:nth-of-type(3) .btn-wrap li a:hover{background-color: #fb5;}
+.project article:nth-of-type(4) .btn-wrap li a:hover{background-color: #3ea;}
 /* PROJECT - E */
