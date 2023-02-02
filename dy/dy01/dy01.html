@@ -4,54 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>나이키</title>
+  <title>BAD GUYS</title>
   
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="css/dy01.css">
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
 </head>
 <body>
   <header class="header">
-    <h1 class="logo"><a href="#">나이키</a></h1>
+    <h1 class="logo"><a href="#">BAD GUYS</a></h1>
     <nav class="gnb">
       <ul>
-        <li class="depth1 on"><a href="#"><span>MAIN-1</span></a>
+        <li class="depth1 on"><a href="#"><span>Mr. Wolf</span></a>
           <ul class="depth2">
-            <li><a href="#"><span>SUB-1-1</span></a></li>
+            <li><a href="#"><span>샘 록웰</span></a></li>
+            <li><a href="#"><span>신용우</span></a></li>
+            <li><a href="#"><span>오노에 마츠야</span></a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#"><span>MAIN-2</span></a>
+        <li class="depth1"><a href="#"><span>Mr. Snake</span></a>
           <ul class="depth2">
-            <li><a href="#"><span>SUB-2-1</span></a></li>
-            <li><a href="#"><span>SUB-2-2</span></a></li>
-            <li><a href="#"><span>SUB-2-3</span></a></li>
-            <li><a href="#"><span>SUB-2-4</span></a></li>
+            <li><a href="#"><span>마크 마론</span></a></li>
+            <li><a href="#"><span>엄상현</span></a></li>
+            <li><a href="#"><span>야스다 켄</span></a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#"><span>MAIN-3</span></a>
+        <li class="depth1"><a href="#"><span>Mr. Shark</span></a>
           <ul class="depth2">
-            <li><a href="#"><span>SUB-3-1</span></a></li>
-            <li><a href="#"><span>SUB-3-2</span></a></li>
-            <li><a href="#"><span>SUB-3-3</span></a></li>
-            <li><a href="#"><span>SUB-3-4</span></a></li>
+            <li><a href="#"><span>크레이그 로빈슨</span></a></li>
+            <li><a href="#"><span>김현수</span></a></li>
+            <li><a href="#"><span>초코프라 나가타</span></a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#"><span>MAIN-4</span></a>
+        <li class="depth1"><a href="#"><span>Mr. Piranha</span></a>
           <ul class="depth2">
-            <li><a href="#"><span>SUB-4-1</span></a></li>
-            <li><a href="#"><span>SUB-4-2</span></a></li>
-            <li><a href="#"><span>SUB-4-3</span></a></li>
-            <li><a href="#"><span>SUB-4-4</span></a></li>
+            <li><a href="#"><span>앤서니 라모스</span></a></li>
+            <li><a href="#"><span>정주원</span></a></li>
+            <li><a href="#"><span>카와이 후미토</span></a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#"><span>MAIN-5</span></a>
+        <li class="depth1"><a href="#"><span>Ms. Tarantula</span></a>
           <ul class="depth2">
-            <li><a href="#"><span>SUB-5-1</span></a></li>
-            <li><a href="#"><span>SUB-5-2</span></a></li>
-            <li><a href="#"><span>SUB-5-3</span></a></li>
-            <li><a href="#"><span>SUB-5-4</span></a></li>
+            <li><a href="#"><span>아콰피나</span></a></li>
+            <li><a href="#"><span>원에스더</span></a></li>
+            <li><a href="#"><span>퍼스트 서머 우이카</span></a></li>
           </ul>
         </li>
       </ul>
@@ -60,7 +60,7 @@
   <main class="container">
     <h2 class="hidden">main contents</h2>
     <figure class="mov">
-      <video src="img/nike.mp4" preload="auto" autoplay loop muted></video>
+      <video src="img/bad-guys.mp4" preload="auto" autoplay loop muted></video>
     </figure>
     <section class="text">
       <h3 class="text-tit">Best Qualified<em>AIR MAX</em></h3>
@@ -86,5 +86,17 @@
       </ul>
     </div>
   </footer>
+  <script>
+    $(function(){
+      $('.depth1 > a').hover(function(){
+        $(this).addClass('on');
+      });
+      if($('.gnb ul').hover()){
+        $('.depth1').removeClass('on');
+      }else{
+        $('.depth1').eq(0).addClass('on');
+      };
+    });
+  </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
 .hidden{width: 0;height: 0;overflow: hidden; font-style: 0;line-height: 0;text-indent: -9999px;}
 html{font-size: 10px; line-height: 1;}
 body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-serif; color: #555; letter-spacing: -1px;}
-.inner{padding-left: 30px;padding-right: 30px;}
+/* .inner{padding-left: 30px;padding-right: 30px;} */
 .sec{padding-top: 200px;padding-bottom: 200px;}
 .sec-tit{margin-bottom: 100px; padding-right: 100px; font-weight: 500; font-size: 5rem; color: #aaa; text-align: center;}
 .sec-tit strong{font-weight: 700; font-size: 7rem;}
@@ -74,6 +74,12 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
 .gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
 .snb-list a:hover span{opacity: 1;}
 .snb-list a:hover::before{
+  width: 20px; height: 10px;
+  border-radius: 5px;
+  background-color: #99f;
+}
+.snb-list.on a span{opacity: 1;}
+.snb-list.on a::before{
   width: 20px; height: 10px;
   border-radius: 5px;
   background-color: #99f;

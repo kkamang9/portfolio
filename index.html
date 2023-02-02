@@ -21,9 +21,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
-
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
 
 </head>
 <body>
@@ -45,7 +47,7 @@
     <nav class="snb">
       <h2 class="hidden">사이드메뉴</h2>
       <ul class="snb-wrap">
-        <li class="snb-list"><a href="#"><span>Home</span></a></li>
+        <li class="snb-list on"><a href="#"><span>Home</span></a></li>
         <li class="snb-list"><a href="#"><span>Profile</span></a></li>
         <li class="snb-list"><a href="#"><span>Portfolio#1</span></a></li>
         <li class="snb-list"><a href="#"><span>Portfolio#2</span></a></li>
@@ -58,7 +60,7 @@
   </header>
   <main class="container" id="container">
     <h2 class="hidden">메인컨텐츠</h2>
-    <section class="home sec inner">
+    <section class="home sec inner scroll">
       <h3 class="sec-tit">WEB <em>DESIGN</em>&<em>PUBLISHER</em><strong><em>Jaehong’s</em> Portfolio</strong></h3>
       <span class="circle"><p></p></span>
       <span class="circle"><p></p></span>
@@ -66,9 +68,9 @@
       <span class="circle"><p></p></span>
       <span class="circle"><p></p></span>
     </section>
-    <section class="profile sec inner">
+    <section class="profile sec inner" id="profile">
       <h3 class="sec-tit"><em>Pro</em>file</h3>
-      <div class="profile-wrap">
+      <div class="profile-wrap scroll">
         <figure class="id-pic"><img src="" alt=""></figure>
         <ul class="profile-box">
           <li class="about">
@@ -111,8 +113,8 @@
       </div>
     </section>
     <section class="project sec inner">
-      <h3 class="sec-tit">pro<em>ject</em></h3>
-      <article class="project1">
+      <h3 class="sec-tit"><em>pro</em>ject</h3>
+      <article class="project1 scroll">
         <header class="project-header">
           <h4>RARACOST</h4>
           <strong>그누보드</strong>
@@ -128,7 +130,7 @@
             <p><span>제작물</span>전체페이지</p>
             <p><span>컬러</span></p>
           </div>
-          <p class="concept-desc"><strong>컨셉설명</strong>그누보드를 사용해 구동 가능한 사이트를 만들었습니다.<br>밝고 긍정적인 느낌을 주기위해 높은 채도의 노란색을 포인트 컬러로 사용했습니다.</p>
+          <p class="concept-desc"><strong>컨셉설명</strong>그누보드를 사용해 완전히 구동 가능한 사이트를 만들었습니다.<br>밝고 긍정적인 느낌을 주기위해 높은 채도의 노란색을 포인트 컬러로 사용했습니다.<br></p>
         </div>
         <ul class="btn-wrap">
           <li><a href="web/project2/ppt/project2.pptx">리뉴얼 기획서</a></li>
@@ -136,7 +138,7 @@
           <li><a href="http://jaehong.pe.kr/" target="_blank">페이지 열기</a></li>
         </ul>
       </article>
-      <article class="project2">
+      <article class="project2 scroll">
         <header class="project-header">
           <h4>ZARAM</h4>
           <strong>반응형 웹페이지</strong>
@@ -160,7 +162,7 @@
           <li><a href="web/project3/html/index.html" target="_blank">페이지 열기</a></li>
         </ul>
       </article>
-      <article class="project3">
+      <article class="project3 scroll">
         <header class="project-header">
           <h4>WWF</h4>
           <strong>적응형 웹페이지</strong>
@@ -184,7 +186,7 @@
           <li><a href="web/project1/html/index.html" target="_blank">페이지 열기</a></li>
         </ul>
       </article>
-      <article class="project4">
+      <article class="project4 scroll">
         <header class="project-header">
           <h4>TRIP ADVISOR</h4>
           <strong>앱 디자인</strong>
@@ -200,14 +202,36 @@
             <p><span>제작물</span>앱디자인(Figma)</p>
             <p><span>컬러</span></p>
           </div>
-          <p class="concept-desc"><strong>컨셉설명</strong>여행 소개 어플 트립 어드바이저의 리뉴얼 디자인입니다.<br>부드러운 인상을 주어 편한 마음으로 구매 할 수 있도록 했습니다.</p>
+          <p class="concept-desc"><strong>컨셉설명</strong>여행 소개 어플 트립 어드바이저의 리뉴얼 디자인입니다.<br>앱 이용시간을 늘리기위해 전체적으로 부드러운 인상을 주어 편안한 분위기를 유도했습니다.</p>
         </div>
         <ul class="btn-wrap">
-          <li><a href="#">리뉴얼 기획서</a></li>
           <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#mob01">컨셉서 보기</a></li>
-          <li><a href="#">피그마 작업</a></li>
+          <li><a href="https://www.figma.com/file/DaWl1bawgN39C9nqaTgoLV/trip-adviser?node-id=0%3A1&t=6Oov2tMBTk89oafL-1" target="_blank">피그마 작업</a></li>
         </ul>
       </article>
+    </section>
+    <section class="etc sec inner scroll">
+      <h3 class="sec-tit">My <em>work</em></h3>
+      <ul class="etc-wrap">
+        <li class="etc-list graphic">
+          <h4 class="etc-list-tit">graphic</h4>
+          <article class="etc-list-box">
+            <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#graphic1"><img src="photo/yamyam-v.png" alt=""></a></figure>
+          </article>
+        </li>
+        <li class="etc-list art">
+          <h4 class="etc-list-tit">art work</h4>
+          <article class="etc-list-box">
+            
+          </article>
+        </li>
+        <li class="etc-list dynamic">
+          <h4 class="etc-list-tit">dynamic & hover</h4>
+          <article class="etc-list-box">
+            <figure><a href="web/respon01/respon01.html" target="_blank"><img src="web/respon01/img/pic1.jpg" alt=""></a></figure>
+          </article>
+        </li>
+      </ul>
     </section>
     <!-- modal -->
     <div class="modal fade" id="web01" aria-hidden="true">
@@ -242,6 +266,15 @@
         <div class="modal-content" style="width: 1020px">
           <div class="modal-body">
             <img src="img/concept/" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="graphic1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 1020px">
+          <div class="modal-body">
+            <img src="photo/yamyam.png" alt="">
           </div>
         </div>
       </div>

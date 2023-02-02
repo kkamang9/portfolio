@@ -22,23 +22,21 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
 
 .header{
   width: 800px; height: 100%;
-  background-color: #af0;
+  background-color: #f80;
   position: fixed; left: -500px; top: 0; z-index: 100;
   transform: skew(-40deg);
 }
 .logo{
-  width: 321px; height: 133px;
+  width: 230px; height: 200px;
   text-indent: -9999px;
-  position: absolute; right: 280px; top: 35px;
+  position: absolute; right: 320px; top: 30px;
   transform: skew(40deg);
 }
 .logo a{
   display: block;
-  width: 100%; height: 133px;
-  background-image: url(../img/logo2.png);
-  background-size: contain;
+  width: 100%; height: 200px;
+  background-image: url(../img/badguys-logo.png);
   background-repeat: no-repeat;
-  transform: scale(0.88);
 }
 .gnb{
   position: absolute; right: 0; top: 200px;
@@ -51,7 +49,7 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
 .gnb .depth1 > a{
   display: block;
   width: 100%; height: 60px;
-  padding-right: 40px;
+  padding-right: 60px;
   color: #000;
 }
 .gnb .depth1 > a span{
@@ -73,8 +71,8 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
   display: block;
   width: 100%; height: 40px;
   color: #fff;
-  border-bottom: 2px solid #af0;
-  background-color: #333;
+  border-bottom: 2px solid #fff; border-radius: 10px;
+  background-color: #000;
 }
 .gnb .depth2 li a span{
   display: block;
@@ -106,12 +104,14 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
   position: fixed; left: 0; top: 0;
 }
 .mov video{
-  width: 100%;
+  height: 100vh;
 }
 .text{
   position: fixed; right: 0; top: 0; z-index: 100;
 }
-.text-tit{}
+.text-tit{
+  font-weight: 700; font-size: 60px; color: #fff;
+}
 .text-dexc{}
 
 .down{
