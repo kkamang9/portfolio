@@ -3,10 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
 
-* , ::after , ::before{
-  box-sizing: border-box;
-}
-/* flex를 사용할 때 비포 에프터의 정렬에 문제가 생김 */
+* , ::after , ::before{box-sizing: border-box;}
 
 .hidden{
   width: 0; height: 0; overflow: hidden;
@@ -14,12 +11,8 @@
   position: absolute; left: -9999px;
 }
 .clearfix::after{content: ""; display: block; clear: both;}
-
 a{text-decoration: none; color: inherit;}
-
 body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: -0.5px;}
-
-
 .header{
   width: 800px; height: 100%;
   background-color: #f80;
@@ -38,14 +31,8 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
   background-image: url(../img/badguys-logo.png);
   background-repeat: no-repeat;
 }
-.gnb{
-  position: absolute; right: 0; top: 200px;
-}
-.gnb > ul{}
-.gnb .depth1{
-  width: 200px;
-  position: relative;
-}
+.gnb{position: absolute; right: 0; top: 200px;}
+.gnb .depth1{width: 200px;position: relative;}
 .gnb .depth1 > a{
   display: block;
   width: 100%; height: 60px;
@@ -91,28 +78,22 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
   transform: translate(180px,0);
 }
 /* hover */
-/* on */
-.gnb .on > a{
-  color: #fff;
-  background-color: #000;
-}
-/* on */
-
-.container{}
 .mov{
   width: 100%; min-width: 1600px;
   position: fixed; left: 0; top: 0;
 }
-.mov video{
-  height: 100vh;
-}
-.text{
-  position: fixed; right: 0; top: 0; z-index: 100;
-}
+.mov video{height: 100vh;}
+.text{position: fixed; right: 100px; top: 50px; z-index: 100;}
 .text-tit{
-  font-weight: 700; font-size: 60px; color: #fff;
+  margin-bottom: 10px;
+  font-weight: 500; font-size: 40px; color: #fff; text-align: right;
 }
-.text-dexc{}
+.text-tit em{
+  display: block;
+  font-weight: 900; font-size: 60px;
+}
+.text-desc{font-size: 30px; color: #fff;}
+.text-desc span{font-weight: 700; font-size: 50px;}
 
 .down{
   width: 50px; height: 50px;
@@ -120,7 +101,6 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
   position: fixed; left: 50%; bottom: 100px; z-index: 100;
   animation: ani 1s infinite;
 }
-.down a{}
 .down a i{
   font-size: 80px; color: #fff;
   text-shadow: 0 5px 10px #fff;
@@ -144,21 +124,18 @@ body{font: 16px/1 'Noto Sans KR',"돋움" , dotum , sans-serif; letter-spacing: 
 }
 .f-img{
   width: 300px;
-  position: absolute; left: 50px; bottom: 50px; 
+  position: absolute; left: 50px; bottom: 50px;
 }
-.f-img li{
-  transform: translate(150px,0);
-  transition: all 0.5s;
-}
+.f-img li{transform: translate(150px,0);transition: all 0.5s;}
 .f-img li:nth-child(2){transition-delay: 0.1s;}
 .f-img li:nth-child(3){transition-delay: 0.2s;}
 .f-img li em{
   display: block;
-  color: #af0;
+  color: #fff;
   transform: skew(40deg);
 }
-.f-img li a{}
-.f-img li a img{}
+.f-img li a{display: block; width: 250px; height: 100px; overflow: hidden;}
+.f-img li a img{width: 100%; transform: skew(40deg);}
 /* hover */
 .footer:hover{right: -500px;}
 .footer:hover .f-wrap{left: 50px;}

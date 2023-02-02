@@ -16,7 +16,7 @@ $(function(){
         offsetTop = sectionTop.offset().top;
     $doc.stop().animate({
       scrollTop: offsetTop - 150
-    }, 500);
+    });
   });
   $(window).on('scroll', function(){
     scroll = $(window).scrollTop();

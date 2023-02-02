@@ -11,15 +11,13 @@
 
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
 </head>
 <body>
   <header class="header">
     <h1 class="logo"><a href="#">BAD GUYS</a></h1>
     <nav class="gnb">
       <ul>
-        <li class="depth1 on"><a href="#"><span>Mr. Wolf</span></a>
+        <li class="depth1"><a href="#"><span>Mr. Wolf</span></a>
           <ul class="depth2">
             <li><a href="#"><span>샘 록웰</span></a></li>
             <li><a href="#"><span>신용우</span></a></li>
@@ -63,8 +61,8 @@
       <video src="img/bad-guys.mp4" preload="auto" autoplay loop muted></video>
     </figure>
     <section class="text">
-      <h3 class="text-tit">Best Qualified<em>AIR MAX</em></h3>
-      <p class="text-tit"><span>50</span>/24</p>
+      <h3 class="text-tit">나쁘지만<em>매력적인</em></h3>
+      <p class="text-desc"><span>악당</span>녀석들</p>
     </section>
     <aside class="down"><a href="#"><i class="xi-caret-down-circle-o"></i></a></aside>
   </main>
@@ -73,30 +71,18 @@
       <ul class="f-img">
         <li>
           <em>Event & Comunity</em>
-          <a href="#"><img src="img/pic1.png" alt=""></a>
+          <a href="#"><img src="img/footer01.png" alt=""></a>
         </li>
         <li>
           <em>News & Notice</em>
-          <a href="#"><img src="img/pic2.png" alt=""></a>
+          <a href="#"><img src="img/footer02.png" alt=""></a>
         </li>
         <li>
           <em>Product Review</em>
-          <a href="#"><img src="img/pic3.png" alt=""></a>
+          <a href="#"><img src="img/footer03.png" alt=""></a>
         </li>
       </ul>
     </div>
   </footer>
-  <script>
-    $(function(){
-      $('.depth1 > a').hover(function(){
-        $(this).addClass('on');
-      });
-      if($('.gnb ul').hover()){
-        $('.depth1').removeClass('on');
-      }else{
-        $('.depth1').eq(0).addClass('on');
-      };
-    });
-  </script>
 </body>
 </html>
