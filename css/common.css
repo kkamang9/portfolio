@@ -12,15 +12,17 @@
 .hidden{width: 0;height: 0;overflow: hidden; font-style: 0;line-height: 0;text-indent: -9999px;}
 html{font-size: 10px; line-height: 1;}
 body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-serif; color: #555; letter-spacing: -1px;}
-/* .inner{padding-left: 30px;padding-right: 30px;} */
+main{width: 100%; min-width: 1280px; overflow: hidden;}
+.inner{width: 1280px; margin: 0 auto;}
 .sec{padding-top: 200px;padding-bottom: 200px;}
-.sec-tit{margin-bottom: 100px; padding-right: 100px; font-weight: 500; font-size: 5rem; color: #aaa; text-align: center;}
+.sec-tit{margin-bottom: 100px; font-weight: 500; font-size: 5rem; color: #aaa; text-align: center;}
 .sec-tit strong{font-weight: 700; font-size: 7rem;}
 .sec-tit em{color: #333;}
+.modal-body img{width: 1000px;}
 /* COMMON - E */
 
 /* HEADER - S */
-.header .inner{display: flex; justify-content: space-between; align-items: center;}
+.header .inner{display: flex; justify-content: space-between; align-items: center; min-width: 1280px;}
 .logo{width: 220px; height: 40px;}
 .logo a{
   display: block;
@@ -70,7 +72,7 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
   transform: rotate(135deg);
   transition: all 0.5s;
 }
-/* hover */
+/* efect */
 .gnb-list:hover::after{width: calc(100% - 80px);border-radius: 10px;}
 .snb-list a:hover span{opacity: 1;}
 .snb-list a:hover::before{
@@ -84,4 +86,24 @@ body{font-family: 'Rubik', 'Noto Sans KR', '돋움', Dotum, AppleGothic, sans-se
   border-radius: 5px;
   background-color: #99f;
 }
+.snb-list:nth-child(8) a{color: #fff;}
 /* HEADER - E */
+/* FOOTER - S */
+.footer{
+  width: 100%; height: 980px; min-width: 1280px;
+  padding-top: 150px;
+  background: url(../img/footer-bg.jpg) no-repeat center center;
+}
+.f-wrap{
+  width: 1100px;
+  margin-bottom: 80px; padding-top: 80px;
+  text-align: center;
+  border: 20px solid #fff;
+}
+.f-tit{margin-bottom: 50px; font-weight: 700; font-size: 60px; color: #fff;}
+.f-contact{margin-bottom: 100px;}
+.f-contact li{margin-bottom: 30px;}
+.f-contact li em{display: block; margin-bottom: 10px; font-size: 18px; color: rgba(255,255,255,0.7);}
+.f-contact li p{font-weight: 500; font-size: 24px; color: #fff;}
+.f-copy{font-weight: 300; font-size: 16px; color: rgba(255,255,255,0.5); text-align: center;}
+/* FOOTER - E */

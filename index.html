@@ -13,7 +13,7 @@
   <meta property="og:title" content="Jaehong’s Portfolio"/>
   <meta property="og:type" content="website"/>
   <meta property="og:description" content="웹 디블리셔 이재홍 포트폴리오"/>
-  <meta property="og:image" content="img/opengraphics.png"/>
+  <meta property="og:image" content="img/opengraphics.jpg"/>
 
   <!-- 파비콘 -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
@@ -63,7 +63,7 @@
   </header>
   <main class="container" id="container">
     <h2 class="hidden">메인컨텐츠</h2>
-    <section class="home sec inner scroll">
+    <section class="home sec inner scroll scroll-gnb">
       <h3 class="sec-tit">WEB <em>DESIGN</em>&<em>PUBLISHER</em><strong><em>Jaehong’s</em> Portfolio</strong></h3>
       <span class="circle"><p></p></span>
       <span class="circle"><p></p></span>
@@ -71,10 +71,10 @@
       <span class="circle"><p></p></span>
       <span class="circle"><p></p></span>
     </section>
-    <section class="profile sec inner" id="profile">
+    <section class="profile sec inner scroll-gnb" id="profile">
       <h3 class="sec-tit"><em>Pro</em>file</h3>
       <div class="profile-wrap scroll">
-        <figure class="id-pic"><img src="" alt=""></figure>
+        <figure class="id-pic"><img src="img/profile01.jpg" alt=""></figure>
         <ul class="profile-box">
           <li class="about">
             <h4 class="sub-tit">About me</h4>
@@ -98,11 +98,12 @@
             <h4 class="sub-tit">Skill</h4>
             <div class="txt-wrap">
               <p>PHOTOSHOP</p>
-              <p>ILLUSTRATER</p>
+              <p>ILLUSTRATOR</p>
               <p>FIGMA</p>
               <p>HTML</p>
               <p>CSS</p>
               <p>JS,JQ</p>
+              <p>GITHUB</p>
             </div>
           </li>
           <li class="license">
@@ -115,7 +116,7 @@
         </ul>
       </div>
     </section>
-    <section class="project sec inner">
+    <section class="project sec inner scroll-gnb">
       <h3 class="sec-tit"><em>pro</em>ject</h3>
       <article class="project1 scroll">
         <header class="project-header">
@@ -209,111 +210,208 @@
         </div>
         <ul class="btn-wrap">
           <li><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#mob01">컨셉서 보기</a></li>
-          <li><a href="https://www.figma.com/file/DaWl1bawgN39C9nqaTgoLV/trip-adviser?node-id=0%3A1&t=6Oov2tMBTk89oafL-1" target="_blank">피그마 작업</a></li>
+          <li><a href="https://www.figma.com/file/DaWl1bawgN39C9nqaTgoLV/trip-adviser?node-id=0%3A1&t=6Oov2tMBTk89oafL-1" target="_blank">피그마 열기</a></li>
         </ul>
       </article>
     </section>
-    <section class="etc sec inner scroll">
+    <section class="work sec inner scroll scroll-gnb">
       <h3 class="sec-tit">My <em>work</em></h3>
-      <ul class="etc-wrap">
-        <li class="etc-list graphic">
-          <h4 class="etc-list-tit">graphic</h4>
-          <article class="etc-list-box">
-            <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#graphic1"><img src="photo/yamyam-v.png" alt=""></a></figure>
+      <ul class="work-wrap">
+        <li class="work-list graphic">
+          <h4 class="work-list-tit on">graphic</h4>
+          <article class="work-list-box">
+            <div class="box-wrap">
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#graphic1"><img src="img/graphic-v1.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#graphic3"><img src="img/graphic-v3.jpg" alt=""></a></figure>
+            </div>
           </article>
         </li>
-        <li class="etc-list art">
-          <h4 class="etc-list-tit">art work</h4>
-          <article class="etc-list-box">
-            
-          </article>
-        </li>
-        <li class="etc-list dynamic">
-          <h4 class="etc-list-tit">dynamic & hover</h4>
-          <article class="etc-list-box">
-            <figure><a href="web/respon01/respon01.html" target="_blank"><img src="web/respon01/img/pic1.jpg" alt=""></a></figure>
-            <article class="hover01">
-              <header class="hover01-header">
-                <h1 class="hover01-tit">여름 캠핑 <span>필수품!</span></h1>
-                <ul class="hover01-sns">
-                  <li><span class="material-symbols-outlined">attachment</span></li>
-                  <li><span class="material-symbols-outlined">thumb_up</span></li>
-                  <li><span class="material-symbols-outlined">favorite</span></li>
+        <li class="work-list etc">
+          <h4 class="work-list-tit">etc work</h4>
+          <article class="work-list-box">
+            <div class="box-wrap">
+              <figure class="work-config"><a href="web/respon01/respon01.html" target="_blank"><img src="img/etc-v1.jpg" alt=""></a></figure>
+              <figure><a href="dy/dy01/dy01.html" target="_blank"><img src="img/etc-v2.jpg" alt=""></a></figure>
+              <article class="hover01">
+                <header class="hover01-header">
+                  <h1 class="hover01-tit">여름 캠핑 <span>필수품!</span></h1>
+                  <ul class="hover01-sns">
+                    <li><span class="material-symbols-outlined">attachment</span></li>
+                    <li><span class="material-symbols-outlined">thumb_up</span></li>
+                    <li><span class="material-symbols-outlined">favorite</span></li>
+                  </ul>
+                </header>
+                <nav class="hover01-gnb">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </nav>
+                <p class="hover01-txt">If you are planning to go camping for summer vacation, pay attention!</p>
+                <figure class="hover01-img">
+                  <img src="img/Untitled-1.jpg" alt="캠핑">
+                </figure>
+              </article>
+              <article class="hover02">
+                <h1 class="hover02-tit">바다의 수호자 <span>혹등고래</span></h1>
+                <p class="hover02-txt">Advanced technology is being developed to help us understand whales by observing their lives.</p>
+                <ul class="hover02-line">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                 </ul>
-              </header>
-              <nav class="hover01-gnb">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </nav>
-              <p class="hover01-txt">If you are planning to go camping for summer vacation, pay attention!</p>
-              <figure class="hover01-img">
-                <img src="img/Untitled-1.jpg" alt="캠핑">
-              </figure>
-            </article>
-            <article class="hover02">
-              <h1 class="hover02-tit">바다의 수호자 <span>혹등고래</span></h1>
-              <p class="hover02-txt">Advanced technology is being developed to help us understand whales by observing their lives.</p>
-              <ul class="hover02-line">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <figure class="hover02-img"><img src="img/Untitled-2.jpg" alt="혹등고래"></figure>
-            </article>
+                <figure class="hover02-img"><img src="img/Untitled-2.jpg" alt="혹등고래"></figure>
+              </article>
+            </div>
+          </article>
+        </li>
+        <li class="work-list art">
+          <h4 class="work-list-tit">art work</h4>
+          <article class="work-list-box">
+            <div class="box-wrap">
+              <figure class="work-config"><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork1"><img src="img/artwork/artwork1.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork2"><img src="img/artwork/artwork2.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork3"><img src="img/artwork/artwork3.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork4"><img src="img/artwork/artwork4.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork5"><img src="img/artwork/artwork9.jpg" alt=""></a></figure>
+              <figure><a class="click" href="#" data-bs-toggle="modal" data-bs-target="#artwork6"><img src="img/artwork/artwork6.jpg" alt=""></a></figure>
+            </div>
           </article>
         </li>
       </ul>
     </section>
     <!-- modal -->
-    <div class="modal fade" id="web01" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 1020px">
-          <div class="modal-body">
-            <img src="img/concept/raracost-concept.png" alt="">
+    <div class="modals">
+      <div class="modal fade" id="web01" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/concept/raracost-concept.png" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="web02" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 1020px">
-          <div class="modal-body">
-            <img src="img/concept/" alt="">
+      <div class="modal fade" id="web02" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/concept/" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="web03" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 1020px">
-          <div class="modal-body">
-            <img src="img/concept/wwf-conceptsheet.png" alt="">
+      <div class="modal fade" id="web03" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/concept/wwf-conceptsheet.png" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="mob01" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 1020px">
-          <div class="modal-body">
-            <img src="img/concept/" alt="">
+      <div class="modal fade" id="mob01" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="figma/ux-concept.png" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade" id="graphic1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: 1020px">
-          <div class="modal-body">
-            <img src="photo/yamyam.png" alt="">
+      <div class="modal fade" id="graphic1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="photo/yamyam.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="graphic3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="pi/pi-concept.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork4" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork5" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork9.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="artwork6" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: 1020px">
+            <div class="modal-body">
+              <img src="img/artwork/artwork6.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer scroll scroll-gnb">
+    <div class="f-wrap inner">
+      <h2 class="f-tit">CONTACT</h2>
+      <ul class="f-contact">
+        <li>
+          <em>name</em>
+          <p>이재홍 (Lee Jaehong)</p>
+        </li>
+        <li>
+          <em>mobile</em>
+          <p>010.2658.6284</p>
+        </li>
+        <li>
+          <em>e-mail</em>
+          <p>kkamang797@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+    <p class="f-copy">Copyrightⓒ2019. Webdesigner.이재홍.All rights reserved.</p>
+  </footer>
 </body>
 </html>
