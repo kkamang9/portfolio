@@ -77,7 +77,7 @@
 .profile-wrap{display: flex; justify-content: center;}
 .profile-wrap .id-pic{width: 300px; height: 450px;}
 .profile-wrap .id-pic img{width: 100%;}
-.profile-box{display: flex; flex-wrap: wrap; width: 500px;}
+.profile-box{display: flex; flex-wrap: wrap; width: 550px;}
 .profile-box li{margin-bottom: 50px; padding-left: 80px;}
 .profile-box li:nth-child(-n+2){width: 100%;}
 .profile-box li .sub-tit{
@@ -149,13 +149,41 @@
 .project article .picture figure img{width: 100%; position: relative; top: 0; left: 0; transition: all 5s ease-in-out;}
 .project article .concept{display: flex; justify-content: center; margin-bottom: 100px;}
 .project article .concept-prop{margin-right: 100px;}
-.project article .concept-prop p{font-size: 18px; line-height: 30px;}
+.project article .concept-prop p{
+  font-size: 18px; line-height: 30px;
+  position: relative;
+}
+.project article .concept-prop p:nth-child(5)::before, .project article .concept-prop p:nth-child(5)::after{content: "";
+  display: block;
+  width: 20px; height: 10px;
+  border-radius: 5px;
+  position: absolute; top: 10px;
+  transform: rotate(-45deg);
+}
+.project article .concept-prop p:nth-child(5)::before{left: 85px;}
+.project article .concept-prop p:nth-child(5)::after{left: 110px;}
+.project article .concept-prop p:nth-child(5) span::after{content: "";
+  display: block;
+  width: 20px; height: 10px;
+  border-radius: 5px;
+  position: absolute; left: 135px; top: 10px;
+  transform: rotate(-45deg);
+}
 .project article .concept-prop p span{
   display: inline-block;
   width: 70px;
   margin-right: 15px;
   font-weight: 500; color: #333; text-align: right;
 }
+.project1 .concept-prop p:nth-child(5)::before{background-color: #eee;}
+.project1 .concept-prop p:nth-child(5)::after{background-color: #fd0;}
+.project1 .concept-prop p:nth-child(5) span::after{background-color: #f33;}
+.project2 .concept-prop p:nth-child(5)::before{background-color: #eee;}
+.project2 .concept-prop p:nth-child(5)::after{background-color: #009;}
+.project3 .concept-prop p:nth-child(5)::before{background-color: #eee;}
+.project3 .concept-prop p:nth-child(5)::after{background-color: #f90;}
+.project4 .concept-prop p:nth-child(5)::before{background-color: #eee;}
+.project4 .concept-prop p:nth-child(5)::after{background-color: #3ea;}
 .project article .concept-desc{font-size: 18px; line-height: 30px;}
 .project article .concept-desc strong{display: block; font-weight: 500; color: #333;}
 .project article .btn-wrap{display: flex; justify-content: center;}
@@ -221,9 +249,11 @@
   transition: all 0.5s;
   cursor: pointer;
 }
+
 .graphic .work-list-tit{left: calc(50% - 400px);}
 .etc .work-list-tit{left: calc(50% - 100px);}
 .art .work-list-tit{left: calc(50% + 200px);}
+
 .work-list-box .box-wrap{display: flex; justify-content: space-between; flex-wrap: wrap;}
 .work-list:nth-child(n+2) .work-list-box{display: none;}
 .work-list-box .box-wrap .work-config{margin-bottom: 50px;}

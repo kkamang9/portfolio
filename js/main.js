@@ -67,6 +67,7 @@ $(function(){
       scrollNum7.addClass('on');
     };
   });
+  
   $('.work-list-tit').on('click', function(){
     $('.work-list-box').fadeOut();
     $(this).next().fadeIn();
