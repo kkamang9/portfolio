@@ -7,10 +7,15 @@
   <title>TOBE SOFT</title>
 
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
   <style>
-    .mission-list svg{fill: #f99;}
-    .mission-list object{
+    .value-list svg{fill: #f99; width: 100px;}
+    .value-list object{
       font-weight: 900; font-size: 80px;
       fill: #333;
       stroke: #f99;
@@ -22,18 +27,28 @@
       transition: all 3s linear;
       left: 100px;
     }
-    .mission-list object:hover{stroke-dashoffset: 0;}
+    .value-list object:hover{stroke-dashoffset: 0;}
     </style>
 </head>
 <body>
+  <div class="skip-nav"><a href="#main">본문바로가기</a></div>
   <header class="header">
     <h1 class="logo"><a href="#">ToBe Soft</a></h1>
     <nav class="gnb">
       <h2 class="hidden">메인메뉴</h2>
-      <ul class="gnb-wrap">
-        <li class="depth1"><a href="#">COMPANY</a>
-          <ul class="depth2">
-            <li>COMPANY</li>
+      <ul class="gnb-depth1">
+        <li><a href="#">COMPANY</a></li>
+        <li><a href="#">DEV.TOOL</a></li>
+        <li><a href="#">IT SOLUTION</a></li>
+        <li><a href="#">AI LAB</a></li>
+        <li><a href="#">PR CENTER</a></li>
+        <li><a href="#">IR</a></li>
+        <li><a href="#">SUPPORT</a></li>
+      </ul>
+      <ul class="gnb-depth2">
+        <li class="gnb-depth2-list">
+          <p>COMPANY</p>
+          <ul class="menu">
             <li><a href="#">기업소개</a></li>
             <li><a href="#">CEO인사말</a></li>
             <li><a href="#">사업영역</a></li>
@@ -42,49 +57,49 @@
             <li><a href="#">찾아오시는길</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">DEV.TOOL</a>
-          <ul class="depth2">
-            <li>DEV.TOOL</li>
+        <li class="gnb-depth2-list">
+          <p>DEV.TOOL</p>
+          <ul class="menu">
             <li><a href="#">NEXACRO</a></li>
             <li><a href="#">XPLATFORM</a></li>
             <li><a href="#">MIPLATFORM</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">IT SOLUTION</a>
-          <ul class="depth2">
-            <li>IT SOLUTION</li>
+        <li class="gnb-depth2-list">
+          <p>IT SOLUTION</p>
+          <ul class="menu">
             <li><a href="#">TOBEMALL</a></li>
             <li><a href="#">V-PASS</a></li>
             <li><a href="#">Z-ERP</a></li>
             <li><a href="#">X-PUSH</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">AI LAB</a>
-          <ul class="depth2">
-            <li>AI LAB</li>
+        <li class="gnb-depth2-list">
+          <p>AI LAB</p>
+          <ul class="menu">
             <li><a href="#">TOBE-IENGINE</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">PR CENTER</a>
-          <ul class="depth2">
-            <li>PR CENTER</li>
+        <li class="gnb-depth2-list">
+          <p>PR CENTER</p>
+          <ul class="menu">
             <li><a href="#">공지사항</a></li>
             <li><a href="#">언론보도</a></li>
             <li><a href="#">웹진</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">IR</a>
-          <ul class="depth2">
-            <li>IR</li>
+        <li class="gnb-depth2-list">
+          <p>IR</p>
+          <ul class="menu">
             <li><a href="#">공시정보</a></li>
             <li><a href="#">주가정보</a></li>
             <li><a href="#">감사보고서</a></li>
             <li><a href="#">결산공고</a></li>
           </ul>
         </li>
-        <li class="depth1"><a href="#">SUPPORT</a>
-          <ul class="depth2">
-            <li>SUPPORT</li>
+        <li class="gnb-depth2-list">
+          <p>SUPPORT</p>
+          <ul class="menu">
             <li><a href="#">상담/제품문의</a></li>
             <li><a href="#">고객지원</a></li>
             <li><a href="#">교육신청</a></li>
@@ -95,17 +110,52 @@
     <div class="tnb">
       <h2 class="hidden">탑메뉴</h2>
       <nav class="tnb-lang">
-        <h3 class="tnb-btn"><a href="#">language</a></h3>
+        <span class="tnb-btn"><a href="#"><i class="xi-globus"></i></a></span>
         <ul class="tnb-lang-box">
           <li><a href="#">KOR</a></li>
           <li><a href="#">ENG</a></li>
         </ul>
       </nav>
-      <a href="#">all menu</a>
+      <div class="tnb-all"><a href="#"><i class="xi-align-justify"></i></a></div>
     </div>
   </header>
   <main class="container">
-    <section class="visual sec"></section>
+    <section class="visual sec">
+      <article class="swiper mySwiper01">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <video autoplay loop muted>
+              <source src="video/visual01.mp4" type="video/mp4">
+            </video>
+            <div class="txt-wrap">
+              <strong>대한민국 1등, IT개발<br>플랫폼 전문기업</strong>
+              <p>대한민국 기업 시스템 UI/UX 역사를 개척한 국내 대표 플랫폼 1위 기업입니다.</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <figure>
+              <img src="img/visual02.jpg" alt="">
+            </figure>
+            <div class="txt-wrap">
+              <strong>AI 융·복합 혁신기술을<br>선도하는 R&D기업</strong>
+              <p>새로운 혁신 기술에 끊임없이 도전해 더 나은 고객의 비즈니스 가치를 창출합니다.</p>
+            </div>
+          </li>
+          <li class="swiper-slide">
+            <video autoplay loop muted>
+              <source src="video/visual03.mp4" type="video/mp4">
+            </video>
+            <div class="txt-wrap">
+              <strong>고객의 성장 DNA를<br>일깨우는 IT기업</strong>
+              <p>Digital Transformation, 초연결 비즈니스 시대에 고객의 혁신과 성장 DNA를 견인합니다.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </section>
     <section class="global sec">
       <div class="sec-header">
         <h3 class="sec-tit"><strong>Global IT</strong> Leading Company</h3>
@@ -150,13 +200,13 @@
         </li>
       </ul>
     </section>
-    <section class="mission sec">
+    <section class="value sec">
       <div class="sec-header">
         <h3 class="sec-tit"><strong>Core Value</strong> and <strong>Mission</strong></h3>
         <p class="sec-desc">투비소프트는 21C 지식사회를 선도하며<br>글로벌 SW기업으로 나아가고자 합니다.</p>
       </div>
-      <ul class="mission-wrap">
-        <li class="mission-list">
+      <ul class="value-wrap">
+        <li class="value-list">
           <div class="svg-box">
             <svg viewBox="0 0 319 590"><polygon points="125.7 71.84 125.7 80.76 125.7 590 210.76 590 210.76 80.76 210.76 71.84 219.64 71.84 319 71.84 319 0 0 0 0 71.84 116.82 71.84 125.7 71.84"></polygon></svg>
             <svg viewBox="0 0 300 590"><path d="M149.55,0C55.91,0,0,51.46,0,137.66V452.35c0,86.19,55.91,137.65,149.55,137.65s150.45-51.46,150.45-137.65V137.66C300,51.46,243.76,0,149.55,0Z"></path></svg>
@@ -166,7 +216,7 @@
             <p>대한민국 기업 시스템 UI·UX<br>역사를 개척한 국내 대표<br>개발 플랫폼 1위 기업입니다.</p>
           </div>
         </li>
-        <li class="mission-list">
+        <li class="value-list">
           <div class="svg-box">
             <svg viewBox="0 0 300 590"><path d="M235.21,289.13l-18.63-7.14,17.76-9.16c39.15-20.18,55.85-53.65,55.85-111.89v-26.72C290.18,42.65,246.49,0,152.67,0H0V590H155.35c97.34,0,144.65-41.92,144.65-128.16v-58.65c0-62.56-19.38-96.67-64.79-114.07Z"></path></svg>
             <svg viewBox="0 0 300 590"><path d="M110.46,450.63v-127.04h146.09v-76.14H110.46V76.14h165.03V0H20V453.21c0,99.72,34.99,136.79,129.1,136.79h130.9v-76.14h-106.55c-46.5,0-62.98-16.54-62.98-63.22Z"></path></svg>
@@ -176,7 +226,7 @@
             <p>새로운 혁신 기술에 끊임없이<br>도전해 더 나은 고객의<br>비즈니스 가치를 창출합니다.</p>
           </div>
         </li>
-        <li class="mission-list">
+        <li class="value-list">
           <div class="svg-box">
             <svg viewBox="0 0 300 590"><path d="M205.83,278.43l-30.53-19.72c-54.04-34.97-69.66-59.93-69.66-111.27s37.39-70.66,74.45-70.66h68.43V1.01h-70.99c-47.74-.01-87.78,12.04-115.81,34.83C31.05,60.79,15.5,97.47,15.5,144.86c0,83.1,30.26,138.16,98.12,178.54l27.79,16.27c45.7,27.41,51.02,64.9,50.22,97.97-1.15,50.28-26.39,74.72-77.14,74.72H42.46v76.64H120.78c110.72,0,162.73-49.82,163.69-156.8,.82-61.14-12.24-110.66-78.63-153.77Z"></path></svg>
             <svg viewBox="0 0 300 590"><path d="M149.55,0C55.91,0,0,51.46,0,137.66V452.35c0,86.19,55.91,137.65,149.55,137.65s150.45-51.46,150.45-137.65V137.66C300,51.46,243.76,0,149.55,0Z"></path></svg>
@@ -201,16 +251,265 @@
         <h3 class="sec-tit">TOBESOFT <strong>News</strong></h3>
         <p class="sec-desc">투비소프트의 새로운 소식입니다.</p>
       </div>
+      <article class="swiper mySwiper02">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="#">
+              <em>01</em>
+              <h4>[인터뷰] 투비소프트, "고객 만족은 기업 혁신에서부터 시작한다"</h4>
+              <figure><img src="img/news-logo.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>02</em>
+              <h4>[파이낸셜뉴스] 투비소프트, AI 객체인식 개발...삼성·IBM 파트너사 선정</h4>
+              <figure><img src="img/news-logo.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>03</em>
+              <h4>[매일경제] ‘데브옵스’, 기업 디지털 전환을 성공으로 이끄는 열쇠 된다</h4>
+              <figure><img src="img/news-result.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>04</em>
+              <h4>[에이빙뉴스] 투비소프트, 홈페이지 새단장... “직관적 화면·사용자 편의성 높여”</h4>
+              <figure><img src="img/news-logo.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>05</em>
+              <h4>[파이낸셜뉴스] 투비소프트, 코로나19에도 별도 영업이익 어닝 서프라이즈</h4>
+              <figure><img src="img/news-logo.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>06</em>
+              <h4>[이코노텔링] 투비소프트 일본법인 넥사웹재팬, 일본시장 공략 박차</h4>
+              <figure><img src="img/news-nexacro.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>07</em>
+              <h4>[데이터넷] 투비디티엑스 ‘2023 AI 바우처 지원사업 공급기업’ 선정</h4>
+              <figure><img src="img/news-dtx.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>08</em>
+              <h4>[데이터넷] 투비소프트, ‘프로젝트형 넥사크로 N 전문가 양성과정’ 2기 수료</h4>
+              <figure><img src="img/news-complet.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>09</em>
+              <h4>[IT DAILY] 투비소프트, 소프트웨이브 2022서 ‘넥사크로 N’ 및 ‘V-패스’ 선봬</h4>
+              <figure><img src="img/news-booth.png" alt=""></figure>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <em>10</em>
+              <h4>[NEWS1] 투비메타, 클럽메타 첫번째 챌린지, '#xxmas 댄스 챌린지' 개최</h4>
+              <figure><img src="img/news-promotion.png" alt=""></figure>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </article>
     </section>
     <section class="contact">
       <div class="sec-header">
         <h3 class="sec-tit"><strong>Contact</strong> Us</h3>
         <p class="sec-desc">궁금한 점을 문의주시면 담당자가 친절히 답변해 드립니다.</p>
       </div>
+      <div class="contact-wrap">
+        <p><span class="required">*</span>표시는 필수 입력 항목입니다.</p>
+        <article class="contact-input">
+          <table class="contact-form">
+            <tr>
+              <td><span class="required">*</span>유형 선택</td>
+              <td colspan="3">
+                <a href="#"></a>
+                <ul>
+                  <li>NEXACRO</li>
+                  <li>XPLATFORM</li>
+                  <li>MIPLATFORM</li>
+                  <li>X-PUSH</li>
+                  <li>TOBEMALL</li>
+                  <li>V-PASS</li>
+                  <li>Z-ERP</li>
+                  <li>TOBE-IENGINE</li>
+                  <li>유지보수</li>
+                  <li>제휴/파트너십</li>
+                  <li>기타</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span>유입 경로</td>
+              <td colspan="3">
+                <span>
+                  <input type="radio" name="route" id="route01">
+                  <label for="route01">온라인 검색</label>
+                </span>
+                <span>
+                  <input type="radio" name="route" id="route02">
+                  <label for="route02">지인추천</label>
+                </span>
+                <span>
+                  <input type="radio" name="route" id="route03">
+                  <label for="route03">컨퍼런스/세미나</label>
+                </span>
+                <span>
+                  <input type="radio" name="route" id="route04">
+                  <label for="route04">언론기사</label>
+                </span>
+                <span>
+                  <input type="radio" name="route" id="route05">
+                  <label for="route05">기타</label>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span>회사명</td>
+              <td><input type="text"></td>
+              <td><span class="required">*</span>성명</td>
+              <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span>연락처</td>
+              <td><input type="tel"></td>
+              <td><span class="required">*</span>이메일</td>
+              <td><input type="email"></td>
+            </tr>
+            <tr>
+              <td><span class="required">*</span>문의 내용</td>
+              <td colspan="3"><input type="text"></td>
+            </tr>
+          </table>
+          <div class="contact-consent">
+            <ul class="consent-chkbox">
+              <li>
+                <input type="checkbox" id="consent-chk01">
+                <label for="consent-chk01"><span class="required">*</span>개인정보 제공 및 활용 동의 (필수)</label>
+              </li>
+              <li>
+                <input type="checkbox" id="consent-chk02">
+                <label for="consent-chk02">마케팅 수신 동의</label>
+              </li>
+              <li>
+                <input type="checkbox" id="consent-chk02">
+                <label for="consent-chk03">현재 투비소프트의 S/W를 사용하고 계십니까?</label>
+              </li>
+            </ul>
+            <button type="button">SEND</button>
+          </div>
+        </article>
+        <article class="contact-map">
+          <div id="daumRoughmapContainer1675907187856" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        </article>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <h2 class="f-logo"><a href="#"></a></h2>
+    <h2 class="f-tit"><strong>Global IT</strong><br>Leading Company</h2>
+    <section class="f-menu">
+      <h3 class="hidden">푸터메뉴</h3>
+      <ul class="f-links">
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">표준내부정보관리</a></li>
+        <li><a href="#">라이선스사용계약서</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">윤리규정</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <article class="f-family">
+        <a href="#" class="f-family-btn">FAMILY SITE</a>
+        <ul class="f-family-box">
+          <li><a href="#">고객지원센터</a></li>
+          <li><a href="#">일본법인</a></li>
+          <li><a href="#">미국법인</a></li>
+          <li><a href="#">PLAYNEXACRO</a></li>
+          <li><a href="#">TOBE-I</a></li>
+          <li><a href="#">TOBETDX</a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="f-info">
+      <article class="f-info-sns">
+        <a href="#" class="hidden">페이스북</a>
+        <a href="#" class="hidden">유튜브</a>
+        <a href="#" class="hidden">투비통</a>
+      </article>
+      <article class="f-info-copy">
+        <h4>㈜투비소프트</h4>
+        <ul>
+          <li>㈜투비소프트</li>
+          <li>대표이사 : 이경찬 장선수</li>
+          <li>사업자등록번호 : 211-86-61993</li>
+          <li>대표번호 : 02-2140-7700</li>
+        </ul>
+        <p>COPYRIGHT(C) BY 2022 TOBESOFT.CO.LTD.ALL RIGHTS RESERVED</p>
+      </article>
+    </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper01", {
+      spaceBetween: 0,
+      effect: "fade",
+      autoplay: {
+          delay: 10000,
+          disableOnInteraction: true,
+        },
+      loop: true,
+      observer: true,
+      observeParents: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper = new Swiper(".mySwiper02", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script charset="UTF-8">
+    new daum.roughmap.Lander({
+      "timestamp" : "1675907187856",
+      "key" : "2dox2",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
+    }).render();
+  </script>
 </body>
 </html>

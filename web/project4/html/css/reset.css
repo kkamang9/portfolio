@@ -6,9 +6,9 @@ p, a, abbr, address, em, img, strong, b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas,
+article, aside, canvas, select,
 figure, object, footer, main, header, hgroup,
-menu, nav, output, ruby, section,
+menu, nav, input, output, ruby, section,
 time, mark, audio, video {
 	margin: 0; padding: 0; border: 0;
 	font-size: 100%; font: inherit;
@@ -32,3 +32,24 @@ table {border-collapse: collapse;border-spacing: 0;}
 button{all: unset;cursor: pointer;}
 a{text-decoration: none;color: inherit;}
 em, address{font-style: normal;}
+
+/* input 기본 스타일 초기화 */
+input, select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+}
+/* input type number 에서 화살표 제거 */
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	all: unset;
+}
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+}
